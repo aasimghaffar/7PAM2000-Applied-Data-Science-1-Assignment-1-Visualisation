@@ -8,8 +8,6 @@
 
 import pandas as pd
 import matplotlib.pyplot as plt
-from io import BytesIO
-import requests as rq
 import numpy as np
         
 def get_data():
@@ -131,19 +129,17 @@ def graph(data,diagram):
         # Show graph
         plt.show()
 
-if __name__=="__main__":
-    
-    # Get Data   
-    data = get_data()
-    
-    # set variable
-    define_variable(data)
-    
-    # Line Plot Graph
-    graph(data,'line')
-    
-    # Bar Chart Graph
-    graph(data,'bar')
-    
-    # Pie Chart Graph
-    graph(data,'pie')
+# Get Data   
+data = get_data()
+
+# set variable
+define_variable(data)
+
+# Line Plot Graph
+graph(data,'line')
+
+# Bar Chart Graph
+graph(data,'bar')
+
+# Pie Chart Graph
+graph(data,'pie')
